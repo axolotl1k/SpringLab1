@@ -5,7 +5,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component
-@Order(2)  // виконається після First
+@Order(3)  // виконається після main
 public class Second implements CommandLineRunner {
     @Override
     public void run(String... args) {
