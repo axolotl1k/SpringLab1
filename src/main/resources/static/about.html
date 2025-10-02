@@ -3,24 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>Про проєкт</title>
+    <link rel="stylesheet" href="/css/style.css">
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-        .btn {
+        .team-photos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
             margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #2196F3;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 16px;
         }
-        .btn:hover { background-color: #1976D2; }
+        .team-photos img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #4CAF50;
+        }
     </style>
 </head>
 <body>
 <h1>Про наш проєкт</h1>
-<p>Цей проєкт зроблений для лабораторних робіт. Ми використали Spring Boot, щоб показати як працюють статичні ресурси.</p>
-<button class="btn" onclick="location.href='/index.html'">⬅ Назад</button>
+
+<div class="section">
+    <p>
+        Даний веб-проєкт є частиною лабораторних робіт з дисципліни «Програмування на Java» (версія 2, лабораторна робота №1).
+        Основна мета – ознайомлення з основами <b>Spring Boot</b> та демонстрація роботи зі статичними ресурсами.
+    </p>
+    <p>
+        Проєкт складається з кількох статичних сторінок:
+    </p>
+    <ul>
+        <li><b>Головна сторінка</b> – містить кнопки переходу до інших розділів.</li>
+        <li><b>Про проєкт</b> – інформація про мету та контекст виконання лабораторної роботи.</li>
+        <li><b>Сторінки учасників</b> – персональні сторінки студентів із коротким описом, навичками та посиланнями на соціальні мережі.</li>
+    </ul>
+    <p>
+        Виконали: студенти групи <b>ІО-35</b>, 3-й курс.
+        У рамках цього завдання ми створили невеликий сайт, де кожен учасник команди представив себе та свою роль у проєкті.
+    </p>
+    <p>
+        Використані технології:
+    </p>
+    <ul>
+        <li>Java, Spring Boot (starter-web)</li>
+        <li>HTML5 + CSS3</li>
+        <li>Flexbox для верстки</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Фото команди</h2>
+    <div class="team-photos">
+        <img src="/images/team_photo.png" alt="Фото команди 1">
+    </div>
+</div>
+
+<button class="btn back" onclick="location.href='/index.html'">⬅ Назад</button>
 </body>
 </html>
